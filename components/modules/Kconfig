@@ -80,6 +80,12 @@ config LUA_MODULE_CAN
   help
       Includes the can module.
 
+config LUA_MODULE_DAC
+  bool "DAC module"
+  default "n"
+  help
+      Includes the dac module.
+
 config LUA_MODULE_DHT
   bool "DHT11/21/22/AM2301/AM2302 module"
   default "n"
@@ -105,11 +111,23 @@ config LUA_MODULE_GPIO
   help
       Includes the GPIO module (recommended).
 
+config LUA_MODULE_HTTP
+  bool "HTTP module"
+  default "y"
+  help
+      Includes the HTTP module (recommended).
+
 config LUA_MODULE_I2C
   bool "I2C module"
   default "y"
   help
       Includes the I2C module (recommended).
+
+config LUA_MODULE_I2S
+  bool "I2S module"
+  default "n"
+  help
+      Includes the I2S module.
 
 config LUA_MODULE_LEDC
   bool "LEDC module"
