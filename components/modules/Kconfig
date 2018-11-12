@@ -68,6 +68,12 @@ config LUA_MODULE_BTHCI
   help
       Includes the simple BlueTooth HCI module.
 
+config LUA_MODULE_CAMERA
+  bool "Camera module"
+  default "y"
+  help
+      Includes the camera module.
+
 config LUA_MODULE_CAN
   bool "CAN module"
   default "n"
