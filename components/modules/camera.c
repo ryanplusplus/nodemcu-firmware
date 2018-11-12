@@ -47,8 +47,8 @@ static int lcamera_init(lua_State *L)
   }
   else if(camera_model == CAMERA_OV2640) {
     s_pixel_format = CAMERA_PF_JPEG;
-    camera_config.frame_size = CAMERA_FS_QQVGA;
-    camera_config.jpeg_quality = 15;
+    camera_config.frame_size = CAMERA_FS_SVGA;
+    camera_config.jpeg_quality = 20;
   }
   else {
     luaL_error(L, "unsupported camera detected");
